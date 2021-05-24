@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button bt_linearLayout;
 
+    // TEST GIT
+
     private static final String TAG = "MainActivity";
 
     @Override
