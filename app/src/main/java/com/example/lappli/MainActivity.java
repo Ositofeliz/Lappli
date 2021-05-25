@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button bt_linearLayout;
+    Button bt_VerticalLinearLayout;
 
     private static final String TAG = "MainActivity";
 
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         bt_linearLayout = findViewById(R.id.bt_linearLayout);
         // Récupération du contenu du texte pour le fournir à putExtra
         String titre_linearLayout = bt_linearLayout.getText().toString();
+
+        bt_VerticalLinearLayout = findViewById(R.id.bt_VerticalLinearLayout);
+        String titre_VerticalLinearLayout = bt_VerticalLinearLayout.getText().toString();
 
 
 
@@ -35,6 +39,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_linearlayout);
             }
         });
+
+        bt_VerticalLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_VerticalLinearLayout = new Intent(MainActivity.this, LinearVerticalActivity.class);
+                intent_VerticalLinearLayout.putExtra("titre_VerticalLinearLayout",titre_VerticalLinearLayout);
+                startActivity(intent_VerticalLinearLayout);
+            }
+        });
+
+
 
         
     }
