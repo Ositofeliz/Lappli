@@ -1,10 +1,12 @@
-package com.example.lappli;
+package Layout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.lappli.R;
 
 public class LinearVerticalActivity extends AppCompatActivity {
 
@@ -20,7 +22,7 @@ public class LinearVerticalActivity extends AppCompatActivity {
 
         Log.i(TAG, "onCreate: " + titreVerticalLinearLayout);
 
-        
+
 
     }
 }

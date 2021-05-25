@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lappli" >
-        <activity android:name=".LinearVerticalActivity" >
+        <activity android:name="Layout.LinearVerticalActivity" >
         </activity>
-        <activity android:name=".LinearLayout" />
+        <activity android:name="Layout.LinearLayout" />
         <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
