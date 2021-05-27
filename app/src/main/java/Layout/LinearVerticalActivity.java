@@ -10,7 +10,7 @@ import com.example.lappli.R;
 
 public class LinearVerticalActivity extends AppCompatActivity {
 
-    private static final String TAG = "LinearLayout";
+    private static final String TAG = "LinearVerticalActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

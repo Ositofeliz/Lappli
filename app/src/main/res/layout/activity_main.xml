@@ -96,7 +96,7 @@
                         android:text="Relative Layout" />
 
                     <Button
-                        android:id="@+id/button28"
+                        android:id="@+id/bt_GridLayout"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -127,20 +127,20 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button38"
+                    android:id="@+id/bt_Loading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Loading" />
 
                 <Button
-                    android:id="@+id/button37"
+                    android:id="@+id/bt_Simpsons"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Simpsons" />
             </LinearLayout>
         </LinearLayout>
 
@@ -227,7 +227,7 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/button36"
+                    android:id="@+id/bt_Spinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Le Spinner" />

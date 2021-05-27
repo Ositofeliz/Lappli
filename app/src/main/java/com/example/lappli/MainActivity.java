@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button bt_linearLayout;
     Button bt_VerticalLinearLayout;
+    Button bt_Loading;
+
 
     // TEST GIT
 
@@ -30,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
         bt_VerticalLinearLayout = findViewById(R.id.bt_VerticalLinearLayout);
         String titre_VerticalLinearLayout = bt_VerticalLinearLayout.getText().toString();
+
+        bt_Loading = findViewById(R.id.bt_Loading);
+        String titre_AnimationLoading = bt_Loading.getText().toString();
 
 
 
@@ -51,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent_VerticalLinearLayout = new Intent(MainActivity.this, LinearVerticalActivity.class);
                 intent_VerticalLinearLayout.putExtra("titre_VerticalLinearLayout",titre_VerticalLinearLayout);
                 startActivity(intent_VerticalLinearLayout);
+            }
+        });
+
+        bt_Loading.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_AnimationLoading = new Intent(MainActivity.this, AnimationLoading.class);
+                intent_AnimationLoading.putExtra("titre_AnimationLoading", titre_AnimationLoading);
+                startActivity(intent_AnimationLoading);
             }
         });
 
