@@ -19,7 +19,6 @@ public class LinearVerticalActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String titreVerticalLinearLayout = intent.getStringExtra("titre_VerticalLinearLayout");
-
         Log.i(TAG, "onCreate: " + titreVerticalLinearLayout);
 
 

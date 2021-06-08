@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import Animation.AnimationLoading;
+import Layout.FrameLayoutActivity;
 import Layout.LinearLayout;
 import Layout.LinearVerticalActivity;
 
@@ -15,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     Button bt_linearLayout;
     Button bt_VerticalLinearLayout;
     Button bt_Loading;
+    Button bt_FrameLayout;
+    Button bt_Simpsons;
+    Button bt_RelativeLayout;
 
 
     // TEST GIT
@@ -35,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
 
         bt_Loading = findViewById(R.id.bt_Loading);
         String titre_AnimationLoading = bt_Loading.getText().toString();
+
+        bt_FrameLayout = findViewById(R.id.bt_FrameLayout);
+        String titre_FrameLayout = bt_FrameLayout.getText().toString();
+
+        bt_Simpsons = findViewById(R.id.bt_Simpsons);
+        String titre_AnimationSimpsonsActivity = bt_Simpsons.getText().toString();
+
+        bt_RelativeLayout = findViewById(R.id.bt_RelativeLayout);
+        String titre_RelativeLayout = bt_RelativeLayout.getText().toString();
 
 
 
@@ -65,6 +79,31 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent_AnimationLoading = new Intent(MainActivity.this, AnimationLoading.class);
                 intent_AnimationLoading.putExtra("titre_AnimationLoading", titre_AnimationLoading);
                 startActivity(intent_AnimationLoading);
+            }
+        });
+
+        bt_Simpsons.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_Simpsons = new Intent(MainActivity.this, AnimationSimpsonsActivity.class);
+                //intent_Simpsons.putExtra("titre_Simpsons", titre_AnimationSimpsonsActivity);
+                startActivity(intent_Simpsons);
+            }
+        });
+
+        bt_FrameLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_FrameLayout = new Intent(MainActivity.this, FrameLayoutActivity.class);
+                startActivity(intent_FrameLayout);
+            }
+        });
+
+        bt_RelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_RelativeLayout = new Intent(MainActivity.this, RelativeLayoutActivity.class);
+                startActivity(intent_RelativeLayout);
             }
         });
 

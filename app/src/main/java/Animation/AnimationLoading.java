@@ -1,4 +1,4 @@
-package com.example.lappli;
+package Animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+
+import com.example.lappli.R;
 
 public class AnimationLoading extends AppCompatActivity {
 
